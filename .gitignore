@@ -1,78 +1,23 @@
-# Python bytecode
+# Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-
-# Environment variables
-.env
 
 # Virtual environments
+ai-media-env/
 venv/
+.venv/
 env/
-*.venv
 
-# Conda environments
-*.conda
-*.condarc
-*.conda-env
-*.condarc.bak
-
-# Poetry
-poetry.lock
-
-# Jupyter Notebook Checkpoints
-.ipynb_checkpoints
-
-# Logs and debug files
-*.log
-*.out
-*.err
-debug.log
-
-# IDE-specific files
+# Editor dirs
 .vscode/
-.idea/
-*.swp
-*.swo
-*.sublime-workspace
 
-# OS-specific files
-.DS_Store
-Thumbs.db
+# Environment files
+.env
+.env.*
 
-# Media files generated during execution
-assets/audio/
-assets/images/
-assets/video/
-
-# Cache and temporary files
-*.cache
-*.tmp
-*.bak
-*.old
-*.swp
-
-# Coverage reports
-.coverage
-*.cover
-*.lcov
-
-# Build artifacts
-build/
+# Build
 dist/
-*.egg-info/
-*.eggs
+build/
 
-# Pytest cache
-.pytest_cache/
-
-# Pip environment files
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Miscellaneous
-*.lock
-
-# API key
-google-credentials.json
+# OS
+.DS_Store

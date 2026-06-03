@@ -118,3 +118,38 @@ This project is licensed under the MIT License.
 - [DALL·E](https://openai.com/dall-e/)
 - [MoviePy](https://zulko.github.io/moviepy/)
 - [Pydub](https://github.com/jiaaro/pydub)
+
+## Deployment
+
+Quick steps to build and run locally with Docker:
+
+```bash
+# build image
+docker build -t ai-media-generator:latest .
+
+# run container (exposes Streamlit on 8501)
+docker run -p 8501:8501 --env-file .env -v "$PWD/assets:/app/assets" ai-media-generator:latest
+```
+
+CI: A GitHub Actions workflow is included at `.github/workflows/docker-publish.yml` to build and push a Docker image to GitHub Container Registry (`ghcr.io`). Set the `GITHUB_TOKEN` secret (automatically provided) and enable packages for your repo.
+
+For Heroku: push this repo to a Heroku app (the included `Procfile` runs the Streamlit app).
+
+To push these changes to GitHub from your local machine:
+
+```bash
+# initialize git (if needed)
+git init
+git add .
+git commit -m "Add Docker + CI deployment files"
+# add your remote (replace URL)
+git remote add origin git@github.com:USERNAME/REPO.git
+git branch -M main
+git push -u origin main
+```
+
+GitHub Actions secrets for Docker Hub (optional):
+- `DOCKERHUB_USERNAME` — your Docker Hub username
+- `DOCKERHUB_TOKEN` — a Docker Hub access token (create on Docker Hub)
+
+The existing workflow pushes images to GitHub Container Registry (`ghcr.io`) using the repository token automatically. If you set the Docker Hub secrets, the workflow will also push an image to Docker Hub.
