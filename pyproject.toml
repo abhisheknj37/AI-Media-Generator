@@ -11,17 +11,19 @@ keywords = ["AI", "video generation", "OpenAI", "text-to-speech"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-openai = "^0.27.8"
+openai = "^2.32.0"
 moviepy = "^1.0.3"
 requests = "^2.31.0"
 pydub = "^0.25.1"
-google-cloud-texttospeech = "^2.21.1"
 python-dotenv = "^1.0.1"
 google-api-core = "^2.23.0"
 imageio = "^2.36.0"
 imageio-ffmpeg = "^0.5.1"
 types-requests = "^2.32.0"
 tomli = "^2.2.1"
+pillow = "^12.2.0"
+gtts = "^2.5.4"
+google-cloud-texttospeech = "^2.36.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.4.0"

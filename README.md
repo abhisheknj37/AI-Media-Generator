@@ -32,11 +32,6 @@ Subscribe to watch the stories come to life!
 - OpenAI API key for GPT and DALL·E access.
 - FFmpeg installed (for MoviePy and Pydub).
 
-### Clone the Repository
-```bash
-git clone https://github.com/alisontully/ai-media-generator.git
-cd ai-media-generator
-```
 
 ### Run the Setup Script
 Run the provided setup script to install dependencies and set up the environment:
