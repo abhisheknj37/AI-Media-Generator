@@ -1,5 +1,7 @@
-
 # AI Media Generator
+
+<escape>🚀 Live Demo: https://ai-media-generator-m12x.onrender.com</escape>  
+> Public demo deployment. AI generation features may require OpenAI or Google credentials configured by the owner; no paid API keys are included.
 
 AI Media Generator is a Python application that generates multimedia content based on user prompts. It uses the following capabilities:
 - **OpenAI GPT** for text generation.
